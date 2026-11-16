@@ -1445,12 +1445,6 @@ SELECT * FROM extend_lending(2, 7);
 Репозиторій з повним кодом SQL скриптів: `https://github.com/username/library-db-lab3`
 
 Файли проєкту:
-- `01-create-structure.sql` - створення структури БД
-- `02-insert-data.sql` - початкові дані
-- `03-basic-operations.sql` - базові операції модифікації
-- `04-transactions.sql` - робота з транзакціями
-- `05-advanced-features.sql` - розширені можливості
-- `06-creative-extensions.sql` - творчі розширення
 - `01-created-DB.png` - створення структури таблиць бази даних
 - `02-filled-BD.png` - наповнення таблиць початковими тестовими даними
 - `03-safe-update.png` - демонстрація безпечного оновлення записів (`UPDATE`)
