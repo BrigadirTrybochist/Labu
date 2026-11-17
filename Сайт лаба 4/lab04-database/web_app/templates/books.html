@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Книжковий магазин</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; background: #f4f4f4; }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background: #333; color: white; }
+        .btn { padding: 5px 10px; background: #28a745; color: white; text-decoration: none; border-radius: 3px; }
+        .btn-danger { background: #dc3545; }
+        .alert { padding: 10px; margin-bottom: 20px; border-radius: 5px; }
+        .alert-success { background: #d4edda; color: #155724; }
+        .alert-error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>📚 Каталог книг</h1>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <p><a href="{{ url_for('add_book') }}" class="btn">+ Додати книгу</a></p>
+    
+    <table>
+        <tr>
+            <th>ID</th><th>Назва</th><th>Автор</th><th>Жанр</th><th>Ціна</th><th>Склад</th><th>Дії</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+            <td>{{ book[0] }}</td>
+            <td>{{ book[1] }}</td>
+            <td>{{ book[2] }}</td>
+            <td>{{ book[3] }}</td>
+            <td>{{ book[4] }} грн</td>
+            <td>{{ book[5] }}</td>
+            <td>
+                <a href="{{ url_for('delete_book', book_id=book[0]) }}" class="btn btn-danger" onclick="return confirm('Видалити?')">Видалити</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
