@@ -7,7 +7,7 @@
 ## 📖 Документація
 Уся детальна інформація, опис концептуальної моделі, логічної схеми, скріншоти та висновки знаходяться у звіті:
 
-👉 **[Переглянути звіт]([docs/report.md](https://github.com/BrigadirTrybochist/Labu/blob/main/%D0%A1%D0%B0%D0%B9%D1%82%20%D0%BB%D0%B0%D0%B1%D0%B0%204/lab04-database/docs/report.md))**
+👉 **[Переглянути звіт]([docs/report.md]https://github.com/BrigadirTrybochist/Labu/blob/main/%D0%A1%D0%B0%D0%B9%D1%82%20%D0%BB%D0%B0%D0%B1%D0%B0%204/lab04-database/docs/report.md)**
 
 ## 🛠 Технології
 - **База даних:** PostgreSQL 17 (Docker)
