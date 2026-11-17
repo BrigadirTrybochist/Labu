@@ -52,6 +52,36 @@
 
 <img width="1849" height="617" alt="image" src="https://github.com/user-attachments/assets/0bbe5975-8c66-4eb9-ba47-241e5d663c42" />
 
+## Структура файлів застосунку
+
+lab04-database/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── docker-compose.yml
+│
+├── docs/
+│   ├── conceptual_model.png
+│   └── report.md
+│
+├── database/
+│   ├── 01_create_tables.sql
+│   ├── 02_insert_data.sql
+│   ├── 03_create_procedures.sql
+│   ├── 04_create_triggers.sql
+│   ├── 05_create_views.sql
+│   └── queries.sql
+│
+├── console_app/
+│   ├── database.py
+│   └── main.py
+│
+└── web_app/
+    ├── app.py
+    └── templates/
+        ├── add_book.html
+        └── books.html
+
 ## Висновки
 Під час виконання лабораторної роботи було спроєктовано та реалізовано базу даних для книжкового магазину. Створено нормалізовану структуру, наповнено її тестовими даними. Реалізовано консольний та веб-застосунки, а також збережені процедури, тригери та представлення. Набуті навички роботи з PostgreSQL, Docker та Flask.
 
