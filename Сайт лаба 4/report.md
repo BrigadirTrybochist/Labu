@@ -62,8 +62,8 @@ lab04-database/
 ├── docker-compose.yml
 │
 ├── docs/
-│   ├── conceptual_model.png
-│   └── report.md
+│   └── conceptual_model.png
+│
 │
 ├── database/
 │   ├── 01_create_tables.sql
